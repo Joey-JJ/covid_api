@@ -10,7 +10,7 @@ def get_country(data: dict, country: str) -> int or str:
     return data['Countries'][country_index] if country_index != None else 'Not found'
 
 def print_country_overview(country: dict) -> None:
-    """Prints the revelant data of a country."""
+    """Prints the relevant data of a country."""
     for each in country:
         if each not in ['ID', 'Slug', 'Premium', 'NewRecovered', 'TotalRecovered']:
             print(f'{each}: {country[each]}')
